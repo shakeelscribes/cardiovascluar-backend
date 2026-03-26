@@ -11,8 +11,8 @@ import os
 # ─────────────────────────────────────
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-model  = pickle.load(open(os.path.join(BASE_DIR, 'ml_model', 'cardio_model.pkl'),  'rb'))
-scaler = pickle.load(open(os.path.join(BASE_DIR, 'ml_model', 'scaler.pkl'), 'rb'))
+model  = pickle.load(open('cardio_model.pkl', 'rb'))
+scaler = pickle.load(open('scaler.pkl', 'rb'))
 
 print("✅ Model loaded!")
 print("✅ Scaler loaded!")

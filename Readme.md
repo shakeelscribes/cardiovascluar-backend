@@ -1,4 +1,4 @@
-\<div align="center"\>
+<div align="center"\>
 
 # 🫀 CARDIO-GUARD BACKEND
 
@@ -13,7 +13,7 @@
 
 [Access API Nodes] · [Report Neural Anomaly] · [Project Overview]
 
-\</div\>
+</div\>
 
 -----
 
@@ -128,9 +128,9 @@ This system is maintained and developed by the **Nellai College of Engineering**
 
 -----
 
-\<div align="center"\>
+<div align="center"\>
 
 **[ ⚡ SYSTEM OPERATIONAL ]**
 *Designed for the future of preventive cardiology.*
 
-\</div\>
+</div\>

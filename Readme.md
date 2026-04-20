@@ -1,77 +1,74 @@
-<div align="center"\>
+<div align="center">
 
 # 🫀 CARDIO-GUARD BACKEND
-
 ### *High-Performance CVD Risk Inference Engine*
 
-[](https://www.google.com/search?q=https://fastapi.tiangolo.com/)
-[](https://www.google.com/search?q=https://scikit-learn.org/)
-[](https://www.google.com/search?q=https://render.com/)
-[](https://www.google.com/search?q=)
+[![Engine: FastAPI](https://img.shields.io/badge/Engine-FastAPI-05998b?style=for-the-badge&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
+[![Model: Scikit-Learn](https://img.shields.io/badge/Intelligence-Scikit_Learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)](https://scikit-learn.org/)
+[![Deployment: Render](https://img.shields.io/badge/Deployment-Render-46E3B7?style=for-the-badge&logo=render&logoColor=white)](https://render.com/)
+[![Status: Operational](https://img.shields.io/badge/System_Status-Operational-00FF00?style=for-the-badge)]()
 
 **Predicting the future of heart health through deterministic machine learning.**
 
-[Access API Nodes] · [Report Neural Anomaly] · [Project Overview]
+[Access API Nodes](#-api-interface-map) • [Report Neural Anomaly](https://github.com/shakeelscribes/cardiovascluar-backend/issues) • [Project Overview](#-project-vision)
 
-</div\>
+</div>
 
------
+---
 
 ## 🌌 Project Vision
 
-The **Cardio-Neural Backend** is a dedicated microservice engineered to bridge raw biometric telemetry with clinical-grade predictive intelligence. Built for the final year CVD Risk Prediction project, this repository handles the heavy lifting of data normalization and algorithmic inference.
+The **Cardio-Neural Backend** is a dedicated microservice engineered to bridge raw biometric telemetry with clinical-grade predictive intelligence. Built for the final year CVD Risk Prediction project at Nellai College of Engineering, this repository handles the heavy lifting of data normalization and algorithmic inference.
 
------
+---
 
 ## 🛠 Technical Architecture
 
 ### 🧠 The Intelligence Layer
-
 The core of this system utilizes serialized intelligence nodes to ensure sub-millisecond prediction latency:
-
-  * **`cardio_model.pkl`**: A pre-trained Random Forest Classifier optimized for high-dimensional biometric patterns.
-  * **`scaler.pkl`**: A Standardized Scaling Matrix that ensures input parity with the original training manifold.
+* **`cardio_model.pkl`**: A pre-trained Random Forest Classifier optimized for high-dimensional biometric patterns.
+* **`scaler.pkl`**: A Standardized Scaling Matrix that ensures input parity with the original training manifold.
 
 ### 🔌 Connectivity & Stack
+* **FastAPI**: Asynchronous Python framework for high-concurrency biometric ingestion.
+* **Uvicorn**: ASGI server implementation for lightning-fast request handling.
+* **Scikit-Learn**: The underlying mathematical framework for the inference pipeline.
 
-  * **FastAPI**: Asynchronous Python framework for high-concurrency biometric ingestion.
-  * **Uvicorn**: ASGI server implementation for lightning-fast request handling.
-  * **Scikit-Learn**: The underlying mathematical framework for the inference pipeline.
-
------
+---
 
 ## 🚀 Deployment Protocol
 
-### 1\. Synchronize Repository
-
+### 1. Synchronize Repository
 ```bash
 git clone https://github.com/shakeelscribes/cardiovascluar-backend.git
 cd cardiovascluar-backend
 ```
 
-### 2\. Initialize Neural Environment
+### 2. Initialize Neural Environment
 
 ```bash
 python -m venv env
-source env/bin/activate  # Unix/macOS
-# OR
-.\env\Scripts\activate  # Windows
+# Unix/macOS
+source env/bin/activate
+# Windows
+.\env\Scripts\activate
+
 pip install -r requirements.txt
 ```
 
-### 3\. Launch Local Instance
+### 3. Launch Local Instance
 
 ```bash
 uvicorn main:app --reload --port 8000
 ```
 
------
+---
 
 ## 📡 API Interface Map
 
 ### **Predict Risk Profile**
 
-`POST /predict`
+`POST /predict`  
 *Processes biometric vectors and returns a localized risk assessment.*
 
 **Request Payload:**
@@ -101,7 +98,7 @@ uvicorn main:app --reload --port 8000
 }
 ```
 
------
+---
 
 ## 🏗 System Topology
 
@@ -113,24 +110,26 @@ graph LR
     D --> E{Inference Engine}
     E -->|cardio_model.pkl| F[Risk Prediction]
     F -->|JSON Response| A
+
+    style B fill:#05998b,stroke:#fff,color:#fff
+    style E fill:#F7931E,stroke:#fff,color:#fff
 ```
 
------
+---
 
 ## 👥 Engineering Collective
 
 This system is maintained and developed by the **Nellai College of Engineering** core team:
 
-  * **Mohamed Shakeel** (Lead Backend Architect)
-  * **Shabith Subair**
-  * **Sri Thandapani**
-  * **Mohamed Imran**
+* **Mohamed Shakeel** - *Lead Backend Architect*
+* **Shabith Subair** - *Core Contributor*
+* **Sri Thandapani** - *Core Contributor*
+* **Mohamed Imran** - *Core Contributor*
 
------
+---
 
-<div align="center"\>
+<div align="center">
 
-**[ ⚡ SYSTEM OPERATIONAL ]**
-*Designed for the future of preventive cardiology.*
+**[ ⚡ SYSTEM OPERATIONAL ]** *Designed for the future of preventive cardiology.*
 
-</div\>
+</div>

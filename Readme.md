@@ -18,18 +18,21 @@
 
 ## 🌌 Project Vision
 
-The **Cardio-Neural Backend** is a dedicated microservice engineered to bridge raw biometric telemetry with clinical-grade predictive intelligence. Built for the final year CVD Risk Prediction project at Nellai College of Engineering, this repository handles the heavy lifting of data normalization and algorithmic inference.
+The **CardioGuard Backend** is a dedicated microservice engineered to bridge raw biometric telemetry with clinical-grade predictive intelligence. Built for the CVD Risk Prediction project, this repository handles the heavy lifting of data normalization and algorithmic inference.
 
 ---
 
 ## 🛠 Technical Architecture
 
 ### 🧠 The Intelligence Layer
+
 The core of this system utilizes serialized intelligence nodes to ensure sub-millisecond prediction latency:
+
 * **`cardio_model.pkl`**: A pre-trained Random Forest Classifier optimized for high-dimensional biometric patterns.
 * **`scaler.pkl`**: A Standardized Scaling Matrix that ensures input parity with the original training manifold.
 
 ### 🔌 Connectivity & Stack
+
 * **FastAPI**: Asynchronous Python framework for high-concurrency biometric ingestion.
 * **Uvicorn**: ASGI server implementation for lightning-fast request handling.
 * **Scikit-Learn**: The underlying mathematical framework for the inference pipeline.
@@ -39,6 +42,7 @@ The core of this system utilizes serialized intelligence nodes to ensure sub-mil
 ## 🚀 Deployment Protocol
 
 ### 1. Synchronize Repository
+
 ```bash
 git clone https://github.com/shakeelscribes/cardiovascluar-backend.git
 cd cardiovascluar-backend
@@ -52,7 +56,6 @@ python -m venv env
 source env/bin/activate
 # Windows
 .\env\Scripts\activate
-
 pip install -r requirements.txt
 ```
 
@@ -110,7 +113,6 @@ graph LR
     D --> E{Inference Engine}
     E -->|cardio_model.pkl| F[Risk Prediction]
     F -->|JSON Response| A
-
     style B fill:#05998b,stroke:#fff,color:#fff
     style E fill:#F7931E,stroke:#fff,color:#fff
 ```
@@ -119,7 +121,7 @@ graph LR
 
 ## 👥 Engineering Collective
 
-This system is maintained and developed by the **Nellai College of Engineering** core team:
+This system is maintained and developed by the **CardioGuard** core team:
 
 * **Mohamed Shakeel** - *Lead Backend Architect*
 * **Shabith Subair** - *Core Contributor*
